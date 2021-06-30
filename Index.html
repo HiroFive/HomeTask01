@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Task 01</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./src/css/index.css">
+</head>
+
+<body>
+    <div id='root'>
+        <div class='container'>
+            <div class='table-container'>
+                <table class='data-table'>
+                    <thead>
+                        <tr>
+                            <th scope='col'>Name</th>
+                            <th scope='col'>Created</th>
+                            <th scope='col'>Category</th>
+                            <th scope='col'>Comment</th>
+                            <th scope='col'>Dates</th>
+                            <th scope='col'>
+                                <div class='btn-container'>
+                                    <button id='archive-btn'>Archived</button>
+                                    <button id='active-btn'>Active</button>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id='notes-table-body'>
+                    </tbody>
+                    <tfoot id='notes-table-footer'>
+                    </tfoot>
+                </table>
+                <div class='table-bottom-btn-container'>
+                  <button id='create-notes-btn'>Create Note</button>  
+                </div>
+            </div>
+
+            <div class='table-container '>
+                <table class='data-table'>
+                    <thead>
+                        <tr>
+                            <th scope='col'>Notes Category</th>
+                            <th scope='col'>Active</th>
+                            <th scope='col'>Archived</th>
+                        </tr>
+                    </thead>
+                    <tbody id='summary-table-body'>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script type='module' src="./src/Js/data.js" async defer></script>
+    <script type='module' src="./src/Js/notes.js" async defer></script>
+    <script type='module' src="./src/Js/tableElements.js" async defer></script>
+    <script type='module' src="./src/Js/main.js" async defer></script>
+</body>
+
+</html>
