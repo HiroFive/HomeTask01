@@ -5,6 +5,7 @@ import {
 	editNotesForm,
 	UpdateTables,
 	renderSummaryTable,
+	editDates,
 } from './tableElements.js';
 import {
 	SortDataByStatus,

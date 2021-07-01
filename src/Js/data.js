@@ -107,7 +107,7 @@ const updateDataRow = (newData, ElementId) => {
 
 const deleteDataById = (ElementId) => {
 	tableData.splice(
-		tableData.findIndex( (item) => {
+		tableData.findIndex((item) => {
 			return item.id == ElementId;
 		}),
 		1
@@ -120,7 +120,7 @@ const createNewDataItem = () => {
 		created: document.querySelector('#created-time').innerHTML,
 		category: document.querySelector('#category-input').value,
 		content: inputDefender(document.querySelector('#content-input').value),
-		date: document.querySelector('#dates-input').value,
+		date: new Date(document.querySelector('#dates-input').value).toLocaleDateString('en-GB'),
 		status: 'Active',
 	};
 	tableData.push(newItem);

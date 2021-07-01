@@ -83,7 +83,7 @@ const addNewRowForm = (
     	<td id='created-time'>${created}</td>
     	<td>${renderSelect(category)}</td>
     	<td><input type="text" id='content-input' value='${content}'/></td>
-    	<td><input type="date"  id='dates-input' value=''/></td>
+    	<td><input type="date" id='dates-input' value=''/></td>
     	<td>
         	<div class='btn-container'>
            		<button class='save-Notes-btn form-btn'>
@@ -239,6 +239,7 @@ export {
 	UpdateTables,
 	addElementToTable,
 	closeAddNotesForm,
+	editDates,
 	editNotesForm,
 	renderSummaryTable,
 	LoadTables,
